@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
     <title>Registro</title>
 </head>
 
@@ -26,21 +27,20 @@
             <label>Domicilio:</label>
             <input type="text" name="domicilio">
         </div>
-        <div>
+        <div class="perfil">
             <label>Perfil de usuario:</label>
             <input type="checkbox" name="comprar" id="comprar">
             <label for="comprar">Quiero comprar</label>
             <input type="checkbox" name="vender" id="vender">
             <label for="vender"> Quiero vender</label><br>
         </div>
-        <div>
-            <label>Categorías de interés</label>
-            <select name="categorias"></select>
-            <option value="electro">Electro</option>
-            <option value="moda">Moda</option>
-            <option value="hogar">Hogar</option>
-            <option value="jugue">Juguetería</option>
-            <option value="vidasana">Vida Sana</option>
+        <div class="intereses">
+            <label class="intereses">Intereses:</label>
+            <input type="checkbox" name="electro">Electro</input>
+            <input type="checkbox" name="moda">Moda</input>
+            <input type="checkbox" name="hogar">Hogar</input>
+            <input type="checkbox" name="jugue">Juguetería</input>
+            <input type="checkbox" name="vidasana">Vida Sana</input>
         </div>
         <div>
             <label>Foto de perfil:</label>
