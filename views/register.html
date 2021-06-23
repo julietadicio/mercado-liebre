@@ -10,56 +10,67 @@
 </head>
 
 <body>
-    <form action="">
+    <div class="header">
+        <img class="logo" src="/images/logo-mercado-liebre.svg" width="50%">
+        <input class="search" type="text" placeholder="Buscar productos, marcas...">
+        <h3 class="compra"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
+    </div>
+    <div class="main">
         <div>
-            <label>Nombre y Apellido</label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido" pattern=".{1,}" title="Mas de 1 caracter">
+            <h3>Registro</h3>
         </div>
-        <div>
-            <label>Nombre de Usuario</label>
-            <input type="text" name="usuario">
-        </div>
-        <div>
-            <label>Fecha de nacimiento</label>
-            <input type="date" name="nacimiento">
-        </div>
-        <div>
-            <label>Domicilio:</label>
-            <input type="text" name="domicilio">
-        </div>
-        <div class="perfil">
-            <label>Perfil de usuario:</label>
-            <input type="checkbox" name="comprar" id="comprar">
-            <label for="comprar">Quiero comprar</label>
-            <input type="checkbox" name="vender" id="vender">
-            <label for="vender"> Quiero vender</label><br>
-        </div>
-        <div class="intereses">
-            <label class="intereses">Intereses:</label>
-            <input type="checkbox" name="electro">Electro</input>
-            <input type="checkbox" name="moda">Moda</input>
-            <input type="checkbox" name="hogar">Hogar</input>
-            <input type="checkbox" name="jugue">Juguetería</input>
-            <input type="checkbox" name="vidasana">Vida Sana</input>
-        </div>
-        <div>
-            <label>Foto de perfil:</label>
-            <input type="file" name="perfil">
-        </div>
-        <div>
-            <label>Contraseña</label>
-            <input type="password" name="contraseña">
-        </div>
-        <div>
-            <label>Confirmar contraseña:</label>
-            <input type="password" name="contraseña">
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
-        </div>
+<br>
+        <form action="">
+            <div>
+                <label>Nombre y Apellido</label>
+                <input type="text" name="nombre" pattern=".{1,}" title="Mas de 1 caracter">
+            </div>
+            <div>
+                <label>Nombre de Usuario</label>
+                <input type="text" name="usuario">
+            </div>
+            <div>
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="nacimiento">
+            </div>
+            <div>
+                <label>Domicilio:</label>
+                <input type="text" name="domicilio">
+            </div>
+            <div class="perfil">
+                <label>Perfil de usuario:</label>
+                <input type="checkbox" name="comprar" id="comprar">
+                <label for="comprar">Quiero comprar</label>
+                <input type="checkbox" name="vender" id="vender">
+                <label for="vender"> Quiero vender</label><br>
+            </div>
+            <div class="intereses">
+                <label class="intereses">Intereses:</label>
+                <input type="checkbox" name="electro">Electro</input>
+                <input type="checkbox" name="moda">Moda</input>
+                <input type="checkbox" name="hogar">Hogar</input>
+                <input type="checkbox" name="jugue">Juguetería</input>
+                <input type="checkbox" name="vidasana">Vida Sana</input>
+            </div>
+            <div>
+                <label>Foto de perfil:</label>
+                <input type="file" name="perfil">
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" name="contraseña">
+            </div>
+            <div>
+                <label>Confirmar contraseña:</label>
+                <input type="password" name="contraseña">
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
 
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>

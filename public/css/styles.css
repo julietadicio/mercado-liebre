@@ -12,7 +12,6 @@ article {
     margin: 10px;
     padding: 15px;
     background-color: #ebebeb;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     display: flex;
     flex-direction: column;
 }
@@ -81,7 +80,12 @@ align-items: center;
 
 .description {
     font-size: 16px;
-    display: none
+    opacity: 0;
+    transition: all .3s;
+}
+
+article:hover .description {
+    opacity: 1;
 }
 
 .title {
@@ -115,7 +119,14 @@ align-items: center;
     justify-content: center;
 }
    
-        
+.fa-truck {
+    transition: all .3s;
+}
+
+.fa-truck:hover {
+    transform: rotate(360deg);
+}
+
 .divfooter {
      display: flex;
      flex-direction: column;
@@ -134,7 +145,13 @@ align-items: center;
 
 .fa-credit-card, .fa-user-shield, .fa-gift {
     color: #1259c3;
-    font-size: 30px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fa-credit-card:hover, .fa-user-shield:hover, .fa-gift:hover {
+    color: #39b54a;
 }
 
 
@@ -184,6 +201,13 @@ align-items: center;
         flex-wrap: wrap;
     }
 
+    article {
+    transition: all 0.3s;
+    }
+
+    article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
    
 }
 
@@ -198,5 +222,9 @@ align-items: center;
         flex-wrap: wrap;
     }
     
+    .divfooter {
+        display: flex;
+        flex-direction: row;
+    }
 }
 

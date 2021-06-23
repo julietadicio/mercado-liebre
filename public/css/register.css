@@ -1,16 +1,24 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 8px;
 }
 
 body {
     background-color: #ebebeb;
-    margin: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
-div {
-    margin-top: 20px;
-    display: block;
+.header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 300px;
 }
 
 div label {
@@ -21,6 +29,17 @@ div label {
     display: block;
 }
 
+.main  {
+    display: flex;
+    margin-top: 10px;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    margin: 0px;
+}
+
 input {
     border: none;
     padding: 8px;
@@ -29,6 +48,27 @@ input {
 }
 
 .perfil, .intereses {
-    width: fit-content;
+    display: block;
+    flex-direction: column;
 }
 
+.intereses-div {
+    display: block;
+}
+
+.intereses input {
+    width: 20%;
+}
+.perfil input {
+    width: min-content;
+}
+
+button {
+    background-color: white;
+    margin-top: 15px;
+    border: solid #EAC926 2px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20%;
+}

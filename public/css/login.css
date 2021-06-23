@@ -1,0 +1,7 @@
+button {
+    transition: all 0.3s;
+}
+
+button:hover {
+    color: #0022AA
+}
