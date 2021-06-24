@@ -21,7 +21,7 @@ article {
 }
 
 .search {
-    height: 45px;
+    height: 36px;
     margin: 1%;
     padding: 1%;
     border-radius: 17%;
@@ -67,15 +67,19 @@ align-items: center;
 
 .price {
     font-size: 18px;
+    width: 30%;
 }
 
 .discount {
     font-size: 16px;
     color: #39b54a;
+    margin-left: 5px;
+    width: 70%;
 }
 
 .price-and-discount {
     display: flex;
+    margin-top: 8px;
 }
 
 .description {
@@ -117,6 +121,7 @@ article:hover .description {
     left: 49%;
     flex-direction: column;
     justify-content: center;
+    margin-top: 8px;
 }
    
 .fa-truck {
@@ -132,7 +137,7 @@ article:hover .description {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-    
+     text-align: center;
 }
 
 .footer {
@@ -146,7 +151,7 @@ article:hover .description {
 .fa-credit-card, .fa-user-shield, .fa-gift {
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     transition: all 0.3s;
 }
 
@@ -154,6 +159,14 @@ article:hover .description {
     color: #39b54a;
 }
 
+.footer-section {
+    margin-top: 8px;
+}
+
+.copyright {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
 
 @media (min-width: 769px) {
     .burger-menu {
@@ -225,6 +238,12 @@ article:hover .description {
     .divfooter {
         display: flex;
         flex-direction: row;
+        margin-bottom: 15px;
     }
+
+    .copyright {
+        display: block;
+    }
+
 }
 

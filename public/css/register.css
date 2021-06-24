@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
+
 }
 
 h3 {
@@ -15,6 +16,52 @@ body {
 .header {
     background-color: #EAC926;
     padding: 10px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.header input {
+    width: 40%;
+    border: none;
+    padding: 8px;
+    border-radius: 5%;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.compra {
+    max-width: 20%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.header-top-bar {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.main-navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #222;
+}
+
+.main-navbar li {
+    margin: 0 5px;
 }
 
 .logo {
@@ -23,6 +70,10 @@ body {
 
 div label {
     display: block;
+}
+
+div {
+    margin-top: 6px;
 }
 
 .intereses-div {
@@ -44,31 +95,56 @@ input {
     border: none;
     padding: 8px;
     border-radius: 5%;
-    width: 80%;
+    width: 60%;
 }
 
 .perfil, .intereses {
-    display: block;
+    display: flex;
     flex-direction: column;
 }
 
-.intereses-div {
+.intereses input, .perfil input{
+    margin: auto;
+}
+
+.electro {
     display: block;
 }
 
-.intereses input {
-    width: 20%;
-}
-.perfil input {
-    width: min-content;
+button {
+    color: white;
+    background-color: #0022AA;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8%;
+    width: 60%;
+    border: none;
+    transition: all 0.3s;
+    
 }
 
-button {
-    background-color: white;
-    margin-top: 15px;
-    border: solid #EAC926 2px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 20%;
+button:hover {
+    background-color: #39b54a;
+}
+
+.divfooter {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-credit-card, .fa-user-shield, .fa-gift {
+    margin-top: 10px;
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fa-credit-card:hover, .fa-user-shield:hover, .fa-gift:hover {
+    color: #39b54a;
 }

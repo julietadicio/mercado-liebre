@@ -1,7 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.compra {
+    max-width: 20%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.header-top-bar {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.main-navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #222;
+}
+
+.main-navbar li {
+    margin: 0 5px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.main {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header input {
+    width: 40%;
+    border: none;
+    padding: 8px;
+    border-radius: 5%;
+}
+
+.main input{
+    border: none;
+    padding: 8px;
+    border-radius: 5%;
+    margin-top: 15px;
+    width: 60%;
+
+}
+
 button {
+    color: white;
+    background-color: #0022AA;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8%;
+    width: 60%;
+    border: none;
     transition: all 0.3s;
+    
 }
 
 button:hover {
-    color: #0022AA
+    background-color: #39b54a;
+}
+
+.divfooter {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin-top: 15px;
+}
+
+.fa-credit-card, .fa-user-shield, .fa-gift {
+    margin-top: 10px;
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fa-credit-card:hover, .fa-user-shield:hover, .fa-gift:hover {
+    color: #39b54a;
 }

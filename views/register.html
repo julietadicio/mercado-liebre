@@ -6,28 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <title>Registro</title>
 </head>
 
 <body>
     <div class="header">
-        <img class="logo" src="/images/logo-mercado-liebre.svg" width="50%">
-        <input class="search" type="text" placeholder="Buscar productos, marcas...">
-        <h3 class="compra"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
+        <div class="header-top-bar">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" width="50%">
+            <input class="search" type="text" placeholder="Buscar productos, marcas...">
+            <h3 class="compra"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
+        </div>
+        <nav class="main-navbar">
+            <ul>
+                <li>
+                    <a href="#">Ofertas</a>
+                </li>
+                <li>
+                    <a href="#">Tiendas Oficiales</a>
+                </li>
+                <li>
+                    <a href="#">Vender</a>
+                </li>
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/register">Creá tu cuenta</a><i class="far fa-address-card"></i>
+                </li>
+                <li>
+                    <a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i>
+                </li>
+                <li>
+                    <a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class="main">
         <div>
             <h3>Registro</h3>
         </div>
-<br>
+        <br>
         <form action="">
+
             <div>
                 <label>Nombre y Apellido</label>
                 <input type="text" name="nombre" pattern=".{1,}" title="Mas de 1 caracter">
             </div>
             <div>
                 <label>Nombre de Usuario</label>
-                <input type="text" name="usuario">
+                <input type="text" name="usuario" minlength="4" maxlength="12">
             </div>
             <div>
                 <label>Fecha de nacimiento</label>
@@ -39,26 +71,26 @@
             </div>
             <div class="perfil">
                 <label>Perfil de usuario:</label>
-                <input type="checkbox" name="comprar" id="comprar">
-                <label for="comprar">Quiero comprar</label>
+                <label><input type="checkbox" name="comprar" id="comprar"></label>
+                <label for="comprar">Comprador</label>
                 <input type="checkbox" name="vender" id="vender">
-                <label for="vender"> Quiero vender</label><br>
+                <label for="vender">Vendedor</label><br>
             </div>
             <div class="intereses">
                 <label class="intereses">Intereses:</label>
-                <input type="checkbox" name="electro">Electro</input>
+                <input type="checkbox" name="electro" class="electro">Electro</input>
                 <input type="checkbox" name="moda">Moda</input>
                 <input type="checkbox" name="hogar">Hogar</input>
                 <input type="checkbox" name="jugue">Juguetería</input>
                 <input type="checkbox" name="vidasana">Vida Sana</input>
             </div>
-            <div>
+            <div class="foto">
                 <label>Foto de perfil:</label>
                 <input type="file" name="perfil">
             </div>
             <div>
                 <label>Contraseña</label>
-                <input type="password" name="contraseña">
+                <input type="password" name="contraseña" minlength="4" maxlength="12">
             </div>
             <div>
                 <label>Confirmar contraseña:</label>
@@ -70,6 +102,28 @@
             </div>
 
         </form>
+    </div>
+    <div class="divfooter">
+        <i class="fas fa-credit-card"></i>
+        <h4 class="footer">Pagá con tarjeta o en efectivo
+        </h4>
+        <p class="footerp">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+
+        <i class="fas fa-gift"></i>
+        <h4 class="footer">Envío gratis desde $ 2.500
+        </h4>
+        <p class="footerp">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+
+        <i class="fas fa-user-shield"></i>
+        <h4 class="footer">Seguridad, de principio a fin</h4>
+        <p class="footerp">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+
+
+        <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+
     </div>
 </body>
 
