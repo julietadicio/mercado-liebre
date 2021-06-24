@@ -27,27 +27,23 @@ body {
 }
 
 .main-navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.main-navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.header a {
-    text-decoration: none;
-    color: #222;
-}
-
-.main-navbar li {
-    margin: 0 5px;
+    display: none;
 }
 
 .logo {
     max-width: 300px;
+}
+
+.burger-menu {
+    background-color: #1259c3;;
+    padding: 10px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer
 }
 
 .main {
@@ -115,3 +111,29 @@ button:hover {
 .fa-credit-card:hover, .fa-user-shield:hover, .fa-gift:hover {
     color: #39b54a;
 }
+
+@media (min-width: 769px) {
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    
+    .main-navbar ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    .header a {
+        text-decoration: none;
+        color: #222;
+    }
+    
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+    }
