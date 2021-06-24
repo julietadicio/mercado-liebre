@@ -67,14 +67,12 @@ align-items: center;
 
 .price {
     font-size: 18px;
-    width: 30%;
 }
 
 .discount {
     font-size: 16px;
     color: #39b54a;
     margin-left: 5px;
-    width: 70%;
 }
 
 .price-and-discount {
