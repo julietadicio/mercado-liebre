@@ -15,8 +15,10 @@ article {
     display: flex;
     flex-direction: column;
 }
-
-.search, .logo {
+form .search {
+    width: 35vw;
+}
+.logo {
     width: 48%;
 }
 
@@ -182,6 +184,10 @@ article:hover .description {
 
     .compra {
         font-size: 12px;
+    }
+
+    form .search {
+        width: 25vw;
     }
 
     .logo, .search, .compra {

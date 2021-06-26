@@ -27,8 +27,13 @@ body {
     border-radius: 5%;
 }
 
-.logo {
-    max-width: 300px;
+
+form .search {
+    width: 25vw;
+}
+
+.logo, .search, .compra {
+    width: 32%;
 }
 
 .compra {
@@ -97,7 +102,7 @@ input {
 }
 
 .intereses input, .perfil input{
-    margin: auto;
+    width: auto;
 }
 
 .electro {
