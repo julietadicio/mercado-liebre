@@ -1,2 +1,2 @@
 # mercado-liebre
-https://github.com/julietadicio/mercado-liebre
+https://git.heroku.com/mercado-liebre-jdicio.git
